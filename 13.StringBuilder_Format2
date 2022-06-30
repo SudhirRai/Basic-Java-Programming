@@ -1,0 +1,29 @@
+
+class Frog2 {
+	private int id;
+	private String name;
+	//declare a constructor
+	public Frog2(int id, String name){
+		this.name = name;
+		this.id = id;
+	}
+	//declare a toString method to print instance variables of the Frog class object
+	// this is the String representation of class object
+	public String toString() {
+		//We can use normal string variable as well but I am using stringbuilder right away to mke it efficient
+		StringBuilder sb = new StringBuilder();
+		sb.append(id).append(": ").append(name);
+		return sb.toString();
+	}
+}
+public class AppString2 {
+
+	public static void main(String[] args) {
+		Frog2 frog21 = new Frog2(7,"Freddy");
+		Frog2 frog22 = new Frog2(10,"Treddy");
+		frog21.toString();
+		frog22.toString();
+
+	}
+
+}
