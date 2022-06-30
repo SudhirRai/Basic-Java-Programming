@@ -1,0 +1,31 @@
+class Machine {
+	private String name;
+	private int code;
+	//Define simple constructor with no parameter
+	public Machine(){
+		System.out.println("Running simple constructor");
+		name = "Arnie";
+	}
+	// Constructor with 1 parameter
+	public Machine(String name){
+		System.out.println("Second constructor running");
+		this.name = name;
+	}
+	// Constructore with 2 parameters
+	public Machine(String name, int code){
+		System.out.println("Third constructor running");
+		this.name = name;
+		this.code = code;
+	}
+}
+public class AppClass6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Machine machine1 = new Machine();
+		Machine machine2 = new Machine("GPU Machine");
+		Machine machine3 = new Machine("CPU", 25);
+
+	}
+
+}
