@@ -1,0 +1,47 @@
+class Thing {
+	public final static int LUCKY_NUMBER = 7;
+	// declare an instance variable
+	public String name;
+	//Declare a static variable
+	public static String description;
+	//declare a static count var to count number of object of a class
+	public static int count = 0;
+	//declare an instance variable id to assign UD to each new object
+	public int id;
+	// create constructor to count object and assign id
+	public Thing() {
+		id = count;
+		count++;
+	}
+	//create normal method
+	public void showName() {
+		System.out.println("Object id: " + id + ", " + description + ": " + name);
+	}
+	//create static method
+	public static void showInfo() {
+		System.out.println(description);
+	}
+	
+}
+public class AppClass7 {
+
+	public static void main(String[] args) {
+		//set value of static variable using class
+		Thing.description = "I am a thing";
+		//call static function using class
+		Thing.showInfo();
+		//count number of object before new object creation
+		System.out.println("Before creating the object the count is: " + Thing.count);
+		Thing thing1 = new Thing();
+		Thing thing2 = new Thing();
+		//count number of object before new object creation
+		System.out.println("After creating the object the count is: " + Thing.count);
+		thing1.name = "Sudhir";
+		thing2.name = "Vihaan";
+		thing1.showName();
+		thing2.showName();
+		System.out.println(Thing.LUCKY_NUMBER);
+
+	}
+
+}
