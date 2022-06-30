@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+public class App {
+
+	public static void main(String[] args) {
+		// create scanner object
+		Scanner intInput = new Scanner(System.in);
+		//outout at the prompt
+		System.out.println("Enter an int value: ");
+		//wait for user to enter value
+		int value = intInput.nextInt();
+		// Tell them wht they entered
+		System.out.println("You entered int " + value);
+		// create scanner object
+		Scanner doubleInput = new Scanner(System.in);
+		//outout at the prompt
+		System.out.println("Enter a double value: ");
+		//wait for user to enter value
+		double Dvalue = doubleInput.nextDouble();
+		// Tell them wht they entered
+		System.out.println("You e5ntered double " + Dvalue);
+		Scanner stringInput = new Scanner(System.in);
+		//outout at the prompt
+		System.out.println("Enter a string value: ");
+		//wait for user to enter value
+		String Svalue = stringInput.nextLine();
+		// Tell them wht they entered
+		System.out.println("You entered string " + Svalue);
+		Scanner input = new Scanner(System.in);
+		String text = input.nextLine();
+		switch(text){
+		case "start":
+			System.out.println("machine started !");
+			break;
+		case "stop":
+			System.out.println("Machine stopped!");
+			break;
+		default:
+			System.out.println("Command not recognized");
+		}
+		
+		
+
+	}
+
+}
