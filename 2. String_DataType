@@ -1,0 +1,16 @@
+
+public class Application {
+	public static void main(String[] args) {
+		int myInt = 7;
+		String firstName = "Sudhir";
+		String middleName = "Kumar";
+		String lastName = "Rai";
+		String blank = " ";
+		
+		String fullName = firstName + blank + middleName + blank + lastName;
+		System.out.println(fullName);
+		System.out.println("my fullname is: " + fullName);
+		
+	}
+
+}
