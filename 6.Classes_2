@@ -1,0 +1,38 @@
+
+
+// Declaring a class
+class PersonClass {
+	// Declare instance variables
+	String Name;
+	int Age;
+	// Classes contain "Data" and "Methods"
+	// Create simple method
+	void speak() {
+		for(int i =0; i<3;i++){
+			System.out.println("My Name is: " + Name + " and I am " + Age + " years old ");
+		}
+	}
+}
+
+
+
+public class AppClass2 {
+
+	public static void main(String[] args) {
+		// Create a new class object
+		PersonClass person1 = new PersonClass();
+		// assign data to person object using instance variable
+		person1.Name = "Sudhir Rai";
+		person1.Age = 41;
+		// create another class object
+		PersonClass person2 = new PersonClass();
+		person2.Name = "Vihaan Rai";
+		person2.Age = 10;
+		// Call method speak() for both the person objects
+		person1.speak();
+		person2.speak();
+		
+
+	}
+
+}
