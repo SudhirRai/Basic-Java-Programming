@@ -1,0 +1,29 @@
+class Frog {
+	String name;
+	int age;
+	//declare a setter using keyword "this"
+	public void setName(String name){
+		this.name = name;
+	}
+	//declare a setter using different name in setter
+	public void setAge(int Age){
+		age = Age;
+	}
+	public String getName(){
+		return name;
+	}
+	public int getAge(){
+		return age;
+	}
+}
+public class AppClass5 {
+
+	public static void main(String[] args) {
+		Frog frog1 = new Frog();
+		frog1.setName("Tiger");
+		frog1.setAge(7);
+		System.out.println(frog1.getName());
+		System.out.println(frog1.getAge());
+	}
+
+}
