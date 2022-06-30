@@ -1,0 +1,31 @@
+
+public class AppString1 {
+
+	public static void main(String[] args) {
+		
+		//Creating a string object using StringBuilder class
+		StringBuilder s = new StringBuilder();
+		//appending the string usine append method from StringBuilder class
+		// method chaining, multiple appends at one go
+		s.append("My Name is Roger.").append(" ").append("I am a sky diver.");
+		System.out.println(s.toString());
+		// formatting
+		// String formatting using print and \t and \n
+		System.out.print("Here is some text.\tThat was atab.\n That was a newline.");
+		System.out.println(" More text.");
+		// Formatting integers
+		System.out.printf("Total cost of %-5d: quantity is %d\n", 5,120);
+		for(int i=0;i<20;i++){
+			System.out.printf("%-2d: %s\n", i, "here is some text");
+		}
+		// Formatting double
+		System.out.printf("Total value: %.2f\n", 5.689);
+		System.out.printf("Total value: %-10.2f\n", 343.23423);
+	
+		
+		
+		
+
+	}
+
+}
