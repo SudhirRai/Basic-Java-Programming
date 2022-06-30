@@ -1,0 +1,66 @@
+
+
+
+// Declaring a class
+class PersonClassMethod {
+	// Declare instance variables
+	String FirstName;
+	String LastName;
+	int Age;
+	// Classes contain "Data" and "Methods"
+	// Create simple method. This method does not return any value
+	void speak() {
+		for(int i =0; i<3;i++){
+			System.out.println("My Name is: " + FirstName + " and I am " + Age + " years old ");
+		}
+		
+	}
+	// Create a method which returns a integer value
+	int calRetireAge(){
+		int retireAge = 65 - Age ;
+		return retireAge;
+	}
+	// Create a method which returns a string
+	String fullName(){
+		String fName = FirstName + " " + LastName;
+		return fName;
+	}
+	// define a getter method for instance variables
+	String getName(){
+		return FirstName + " " + LastName;
+	}
+	int getAge(){
+		return Age;
+	}
+}
+
+
+
+public class AppClass3 {
+
+	public static void main(String[] args) {
+		// Create a new class object
+		PersonClassMethod person1 = new PersonClassMethod();
+		// assign data to person object using instance variable
+		person1.FirstName = "Sudhir";
+		person1.LastName = "Rai";
+		person1.Age = 41;
+		// use calRetireAge method to calculate retire age and store in a variable
+		int retirementAge = person1.calRetireAge();
+		// use fullName method to get full name and store in a variable
+		String fullName = person1.fullName();
+		// Print retirement age and full name
+		System.out.println("My retirement age is: " + retirementAge + " and my Fullname is: " + fullName );
+		PersonClassMethod person2 = new PersonClassMethod();
+		person2.FirstName = "Vihaan";
+		person2.LastName = "Rai";
+		person2.Age = 10;
+		// Getting fullname and age using getter function
+		String fName = person2.getName();
+		int age = person2.getAge();
+		System.out.println("My Name is " + fName + " and my age is: " + age);
+
+	}
+
+}
+
