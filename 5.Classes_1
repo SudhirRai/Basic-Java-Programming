@@ -1,0 +1,26 @@
+
+// Declaring a class
+class Person {
+	// Declare instance variables
+	String Name;
+	int Age;
+	// Classes contain "Data" and "Methods"
+}
+
+
+
+public class AppClass1 {
+
+	public static void main(String[] args) {
+		// Create a new class object
+		Person person1 = new Person();
+		// assign data to person object using instance variable
+		person1.Name = "Sudhir Rai";
+		person1.Age = 41;
+		System.out.println("Name of the person is: " + person1.Name);
+		System.out.println("Age of the person is: " + person1.Age);
+		
+
+	}
+
+}
